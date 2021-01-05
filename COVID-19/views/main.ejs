@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/app.css">
+</head>
+<body>
+    <div class="container">
+        <header class="pr flex-center-row">
+            <h1 class="fosi-125 color-fff tealc">코로나19 데이터 통합</h1>
+        </header>
+        <div id="list" class="pr">
+            <div class="item flex-center-column color-333">
+                확진환자 누적
+            <span class="fosi-15 color-000 fowe-7"><%= total.toLocaleString() %></span>
+            </div>
+            <div class="item flex-center-column color-333">
+                전일대비 소계
+            <span class="fosi-15 color-000 fowe-7"><%= covid.toLocaleString() %></span>
+            </div>
+            <div class="item flex-center-column color-333">
+                전일대비 국내발생
+                <span class="fosi-15 color-000 fowe-7"><%= covid_d.toLocaleString() %></span>
+            </div>
+            <div class="item flex-center-column color-333">
+                전일대비 해외유입
+                <span class="fosi-15 color-000 fowe-7"><%= covid_o.toLocaleString() %></span>
+            </div>
+            <div class="item flex-center-column color-333">
+                격리해제 누적
+                <span class="fosi-15 color-000 fowe-7"><%= freeCnt.toLocaleString() %></span>
+            </div>
+            <div class="item flex-center-column color-333">
+                격리해제 전일대비
+                <span class="fosi-15 color-000 fowe-7"><%= freeCnt_compare.toLocaleString() %></span>
+            </div>
+            <div class="item flex-center-column color-333">
+                격리중 누적
+                <span class="fosi-15 color-000 fowe-7"><%= inPrison.toLocaleString() %></span>
+            </div>
+            <div class="item flex-center-column color-333">
+                격리중 전일대비
+                <span class="fosi-15 color-000 fowe-7"><%= inPrison_compare.toLocaleString() %></span>
+            </div>
+            <div class="item flex-center-column color-333">
+                사망 누적
+                <span class="fosi-15 color-000 fowe-7"><%= death.toLocaleString() %></span>
+            </div>
+            <div class="item flex-center-column color-333">
+                사망 전일대비
+                <span class="fosi-15 fowe-7"><%= death_compare.toLocaleString() %></span> 
+            </div>
+            <div class="item flex-center-column color-333">
+                날짜
+                <span class="fosi-15 fowe-7"><%= year %>.<%= mth.toLocaleString() %>.<%= dy.toLocaleString() %> </span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+<!-- url => location -->
