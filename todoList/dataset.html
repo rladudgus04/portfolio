@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="list">
+        <li data-idx="1" data-gondr="yydh">1번 아이템</li>
+        <li data-idx="2" data-gondr="yydh">2번 아이템</li>
+        <li data-idx="3" data-gondr="yydh">3번 아이템</li>
+        <li data-idx="4" data-gondr="yydh">4번 아이템</li>
+    </ul>
+
+    <script>
+        const ul = document.querySelector("#list");
+        ul.addEventListener("click", e =>{
+            console.log(e.target.dataset.gondr);
+           let idx = e.target.getAttribute("data-idx");
+            console.log(idx);
+        });
+    </script>
+</body>
+</html>

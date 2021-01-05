@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <Script src="Rectangle.js"></Script>
+    <Script src="Point.js"></Script>
+    <script>
+        class ClassApp{
+            constructor(name){
+                this.name = name;
+            }
+
+            introduce(){
+                console.log(`안녕하세요 제 이름은 ${this.name}입니다`);
+            }
+        }
+
+        // let app = new ClassApp("김영현");
+        // app.introduce();
+
+        // let rect = new Rectangle(200, 40);
+        // console.log(rect.area);
+        // console.log(rect.name);
+        // rect.name = "변경된 이름";
+        // console.log(rect.name);
+
+        const p1 = new Point (10, 20);
+        const p2 = new Point (20, 30);
+        p1.print();
+        p2.print();
+
+        console.log(Point.distance(p1, p2));
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Animal{
+            constructor(name){
+                this.name = name;
+            }
+            speak(){
+                console.log(`${this.name} 이 소리를 냅니다`);
+
+            }
+        }
+        class Dog extends Animal{
+            constructor(name){
+                super(name + "개");
+            }
+            speak(){
+                console.log(`${this.name}가 짖습니다.`)
+            }
+        }
+
+        let d = new Dog("자몽이");
+        d.speak();
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>돔의 속성값 조절하기</title>
+</head>
+<body>
+    <img src="image/DEEMO-2_03.jpg" alt="sample" id="img1">
+    <img src="image/deemo_main_img2.jpg" alt="sample" id="img2">
+    <button id="swapBtn">교체버튼</button>
+
+    <script>
+        const img = document.querySelector("#img1");
+        const img = document.querySelector("#img2");
+
+        const btn = document.querySelector("#swapBtn");
+        add.addEventListener("click", e =>{
+            let temp = img1.getAttribute("src");
+            img1.setAttribute(img2.src);
+            img2.src = temp;
+        });
+        setInterval(() => btn.click(), 1000);
+        
+    </script>
+</body>
+</html>
