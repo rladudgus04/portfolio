@@ -1,0 +1,276 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    -webkit-tap-highlight-color: #1c1d22;
+}
+.fixed{
+    position: fixed;
+    bottom: 50px;
+    right: 200px;
+    z-index: 10;
+}
+.header{
+    position: relative;
+    width: 100%;
+    height: 950px;
+}
+.rayark_logo{
+    position: fixed;
+    display: flex;
+    top: 40px;
+    left: 20px;
+    z-index: 100;
+}
+
+.rayark_logo:hover > .header_list{
+    opacity: 1.0;
+    filter: alpha(opacity-100);
+}
+.header_list{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    line-height: 30px;
+    opacity: 0;
+    filter: alpha(opacity=100);
+    transition: 0.3s;
+}
+.header_list > li{
+    margin: 30px;
+    /* color: #6c757d;
+     */
+     color: white;
+    width: 100px;
+    height: 40px;
+    line-height: center;
+    align-items: center;
+    
+    transition: .3s;
+    
+}
+.header_list > li > a{
+    /* color: #6c757d;
+     */
+     color: white;
+}
+.header_list > li:hover{
+    font-size: 25px;
+}
+.logoimg{
+    position: absolute;
+    bottom: 460px;
+    left: 600px;
+}
+.fimg{
+    position: absolute;
+    left: 863px;
+    bottom: 200px;
+    width: 195px;
+    height: 55px;
+    opacity: 1.0;
+    filter: alpha(opacity=100);
+    transition: 0.3s;
+}
+.fimg:hover{
+    opacity: 0.4;
+    filter: alpha(opacity=100);
+}
+.googleimg{
+    position: absolute;
+    left: 850px;
+    bottom: 300px;
+    width: 220px;
+    height: 70px;
+    filter: alpha(opacity = 100);
+    opacity: 1.0;
+    transition: 0.3s;
+}
+.googleimg:hover{
+    opacity: 0.4;
+    filter: alpha(opacity = 100);
+}
+.middle{
+    position: relative;
+}
+.m_bgimg{
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+}
+.m_font{
+    font-family: "Noto Sans TC", "Noto Sans", "Microsoft YaHei", "Microsoft JhengHei", Arial, arial, "Helvetica Neue", monospace, sans-serif, "lucida grande", tahoma, verdana;
+    
+    position: absolute;
+    color: white;
+    top: 100px;
+    left: 740px;
+    font-size: 85px;
+}
+.m_video{
+    position: absolute;
+    bottom: 100px;
+    left: 550px;
+}
+.middle_1{
+    width: 100%;
+    height: 800px;
+    background-color: #1c1d22;
+}
+.middle_1 > h1{
+    color: white;
+    font-family: "Noto Sans TC", "Noto Sans", "Microsoft YaHei", "Microsoft JhengHei", Arial, arial, "Helvetica Neue", monospace, sans-serif, "lucida grande", tahoma, verdana;
+    font-size: 85px;
+    font-weight: 100;
+    
+    padding-top: 100px;
+    text-align: center;
+}
+.middle1{
+    position: relative;
+    left: 550px;
+    margin-top: 50px;
+    display: flex;
+    width: 800px;
+    height: 450px;    
+}
+.img_list_1{
+    width: 100%;
+    height: 100%;
+    
+    overflow: hidden;
+}
+.img_list{
+    position: relative;
+    width: 800%;
+    animation: 15s main infinite;
+}
+@keyframes main {
+    0% {
+        left: 0;
+    }
+    20% {
+        left: 0;
+    }
+    25% {
+        left: -100%;
+    }
+    45% {
+        left: -100%;
+    }
+    50% {
+        left: -200%;
+    }
+    70% {
+        left: -200%;
+    }
+    75% {
+        left: -300%;
+    }
+    95% {
+        left: -300%;
+    }
+    100% {
+        left: -400%;
+    }
+}
+.img1{
+    width: calc(100% / 8);
+    height: 100%;
+    float: left;
+}
+.middle_2{
+    position: relative;
+    height: 1150px;
+}
+.bg_img2{
+    overflow-y: hidden;
+}
+.middle_2_j{
+    position: absolute;
+    top: 0;
+    color: white;
+    font-size: 46pt;
+    font-weight: 100;
+    top: 4.5ch;
+    left: 42%;
+}
+.middle_2_i{
+    position: absolute;
+    bottom: 690px;
+    left: 40%;
+}
+.middle_2_info{
+    position: absolute;
+    bottom: 300px;
+    color: white;
+    font-size: 18px;
+    left: 30%;
+    line-height: 35px;
+    font-family: "Noto Sans TC", "Noto Sans", "Microsoft YaHei", "Microsoft JhengHei", Arial, arial, "Helvetica Neue", monospace, sans-serif, "lucida grande", tahoma, verdana;
+}
+.footer{
+    width: 100%;
+    height: 1000px;
+    background-color: #1c1d22;
+    position: relative;
+}
+.footer_j{
+    /* position: absolute;
+     */
+    color: white;
+    font-weight: 100;
+    font-size: 70px;
+    font-family: "Noto Sans TC", "Noto Sans", "Microsoft YaHei", "Microsoft JhengHei", Arial, arial, "Helvetica Neue", monospace, sans-serif, "lucida grande", tahoma, verdana;
+    /* left: 18ch;
+    top: 5mm;
+     */
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 20px;
+}
+.footer_j_info{
+    color: white;
+    text-align: center;
+}
+.footer_content{
+    color: white;
+    width: 650px;
+    margin: 100px auto;
+}
+.job{
+    display: flex;
+    padding: 8px;
+    justify-content: space-between;
+}
+.job_id{
+    font-size: 20px;
+}
+.btn{
+    background-color:white;
+    color: black;
+    border-radius: 20px;
+    width: 100px;
+    text-align: center;
+    cursor: pointer;
+    transition: .2s;
+}
+.btn:hover{
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+}
+.footer_img{
+    text-align: center;
+    margin-top: 250px;
+}
+.footer1{
+    background-color: #18181c;
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 60px;
+    line-height: 55px;
+    font-size: 13px;
+}
